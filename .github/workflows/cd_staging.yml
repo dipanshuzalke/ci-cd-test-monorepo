@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploying everything to the staging cluster
 
-    steps:
-      - name: Deploy to staging
-  run: |
+    run: |
       echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/ssh_key
       chmod 600 ~/ssh_key
       mkdir -p ~/.ssh
