@@ -13,4 +13,4 @@ server.on("connection", async (socket) => {
         }
     })
     socket.send("Hi there you are connected to ws!")
-})
+});
